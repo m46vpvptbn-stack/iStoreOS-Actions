@@ -261,7 +261,7 @@ jobs:
           openwrt_kernel: ${{ inputs.openwrt_kernel }}
           auto_kernel: ${{ inputs.auto_kernel }}
           kernel_repo: ophub/kernel
-          kernel_usage: stable
+          #kernel_usage: stable
           kernel_tags: ${{ inputs.openwrt_kernel }}  # Or another appropriate value
           builder_name: kwonelee
 
