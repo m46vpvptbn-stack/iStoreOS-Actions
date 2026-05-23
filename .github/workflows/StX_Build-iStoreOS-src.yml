@@ -262,6 +262,7 @@ jobs:
           auto_kernel: ${{ inputs.auto_kernel }}
           kernel_repo: ophub/kernel
           kernel_usage: stable
+          kernel_tags: kernel_stable
           builder_name: kwonelee
 
       - name: 📜 调整.img.gz 文件名
