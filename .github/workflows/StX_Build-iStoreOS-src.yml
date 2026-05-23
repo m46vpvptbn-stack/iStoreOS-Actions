@@ -261,8 +261,8 @@ jobs:
           openwrt_kernel: ${{ inputs.openwrt_kernel }}
           auto_kernel: ${{ inputs.auto_kernel }}
           kernel_repo: ophub/kernel
-          #kernel_usage: stable
-          kernel_tags: ${{ inputs.openwrt_kernel }}  # Or another appropriate value
+          kernel_usage: stable
+          # kernel_tags removed: the action does not accept 'kernel_tags' input. If needed, set appropriate inputs supported by the action.
           builder_name: kwonelee
 
       - name: 📜 调整.img.gz 文件名
