@@ -65,6 +65,7 @@ on:
           - leez
           - lubancat-1
           - lubancat-2
+          - lubancat-2n
           - lx-r3s
           - lyt-t68m
           - lz-d3568
@@ -268,7 +269,7 @@ jobs:
           echo "file=$ROOTFS_FILE" >> $GITHUB_OUTPUT
 
       - name: 🧱 打包iStoreOS固件
-        uses: ophub/amlogic-s9xxx-openwrt@main
+        uses: m46vpvptbn-stack/amlogic-s9xxx-openwrt@main
         with:
           openwrt_path: ${{ steps.find_rootfs.outputs.file }}
           openwrt_board: ${{ inputs.openwrt_board }}
